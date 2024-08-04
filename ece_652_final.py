@@ -87,8 +87,8 @@ def simulate_dm_scheduling(tasks, hyperperiod, scale_factor):
             if active_task.remaining_time < 0:
                 active_task.remaining_time = 0
 
-            # Print execution details
-            #print(f"Time {time / scale_factor:.3f}: Task {active_task.id} executes, remaining time {active_task.remaining_time / scale_factor:.3f}")
+# Print execution details
+#print(f"Time {time / scale_factor:.3f}: Task {active_task.id} executes, remaining time {active_task.remaining_time / scale_factor:.3f}")
 
             # If task completes
             if active_task.remaining_time <= 0:
@@ -114,7 +114,7 @@ def main():
     #print(f"LCM (Hyperperiod): {hyperperiod / scale_factor:.3f}")
     #print("Task priorities based on deadlines:")
     #for task in sorted(tasks, key=lambda t: t.deadline):
-     #   print(f"Task {task.id}: Deadline {task.deadline / scale_factor:.3f}, Period {task.period / scale_factor:.3f}")
+     #  print(f"Task {task.id}: Deadline {task.deadline / scale_factor:.3f}, Period {task.period / scale_factor:.3f}")
 
     if schedulable:
         simulate_dm_scheduling(tasks, hyperperiod, scale_factor)
