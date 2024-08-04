@@ -113,8 +113,8 @@ def main():
 
     #print(f"LCM (Hyperperiod): {hyperperiod / scale_factor:.3f}")
     #print("Task priorities based on deadlines:")
-    for task in sorted(tasks, key=lambda t: t.deadline):
-        print(f"Task {task.id}: Deadline {task.deadline / scale_factor:.3f}, Period {task.period / scale_factor:.3f}")
+    #for task in sorted(tasks, key=lambda t: t.deadline):
+     #   print(f"Task {task.id}: Deadline {task.deadline / scale_factor:.3f}, Period {task.period / scale_factor:.3f}")
 
     if schedulable:
         simulate_dm_scheduling(tasks, hyperperiod, scale_factor)
